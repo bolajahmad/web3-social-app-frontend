@@ -66,6 +66,10 @@ function Main(props) {
             src={`${process.env.PUBLIC_URL}/assets/substrate-logo.png`}
             size="mini"
           />
+         
+        </Menu.Menu>
+        <Menu.Menu style={{ alignSelf: 'center', marginLeft: 10 }}>
+          D'social
         </Menu.Menu>
         <Menu.Menu position="right" style={{ alignItems: 'center' }}>
           {!currentAccount ? (
@@ -102,6 +106,9 @@ function Main(props) {
             value={acctAddr(currentAccount)}
           />
           <BalanceAnnotation />
+        </Menu.Menu>
+        <Menu.Menu style={{alignSelf: 'center', marginLeft: 20 }}>
+          <Button primary>Sign In</Button>
         </Menu.Menu>
       </Container>
     </Menu>
